@@ -10,7 +10,6 @@ const { imageBufferToTensor } = require("./services/preprocess");
 const { getRiskAssessment } = require("./utils/risk");
 
 dotenv.config({ path: require("path").resolve(__dirname, "../.env") });
-console.log("API KEY:", process.env.MISTRAL_API_KEY);
 const { getChatReply } = require("./services/chatService");
 const app = express();
 const port = process.env.PORT || 5000;
