@@ -1,0 +1,59 @@
+
+# Dependencies
+node_modules/
+venv1/
+venv312/
+
+# Environment
+.env
+
+# Build output
+dist/
+
+# Large model files (downloaded at runtime)
+Output/
+*.onnx
+*.pth
+
+# Dataset images (too large for GitHub)
+HAM10000_images_part_2/
+HAM10000_images_part_1/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+echo hmnist_28_28_L.csv >> .gitignore
+echo hmnist_28_28_RGB.csv >> .gitignore
+echo hmnist_8_8_L.csv >> .gitignore
+echo hmnist_8_8_RGB.csv >> .gitignore
+echo HAM10000_metadata.csv >> .gitignore
+echo Yongzhen.jpg >> .gitignore
+echo kaggle.json >> .gitignore
+echo label_map.json >> .gitignore
+echo model_metadata.json >> .gitignore
+echo preprocess_config.json >> .gitignore
+echo package-lock.json >> .gitignore
+
+# Dataset CSVs
+hmnist_28_28_L.csv
+hmnist_28_28_RGB.csv
+hmnist_8_8_L.csv
+hmnist_8_8_RGB.csv
+HAM10000_metadata.csv
+
+# Misc
+Yongzhen.jpg
+kaggle.json
+label_map.json
+model_metadata.json
+preprocess_config.json
+package-lock.json
+1.ipynb
+.vscode/
+*.png
