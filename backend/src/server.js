@@ -36,7 +36,12 @@ const DISEASE_NAMES = {
   vasc: "Vascular lesions"
 };
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://dermai-frontend-gnd4.onrender.com"
+  ]
+}));
 app.use(express.json());
 
 app.get("/health", (_req, res) => {
